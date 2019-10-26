@@ -1,3 +1,45 @@
+# EA Frontend Coding Test
+
+By: Juan José López Villar
+
+## Description
+
+This application consists in a small standalone, no server, with mock data, CMS Explorer, that renders the data in a tree-like fashion and can handle sentences addition and deletion, and when a node is selected, it shows the details of the node.
+
+It uses **react-redux** to handle the application's state, it's inline-styled with [emotion-js](https://github.com/emotion-js/emotion), and uses **Font Awesome icons**.
+
+The code is divided in to parts, the **application** code, which handle the main logic, the connection with redux's store, and the **components** code, which is independent of the business logic and can be reused.
+
+## TODO
+
+There is a large plethora of enhancements and requirements that this application should fulfill to pass a minimum quality standard, **that for timely reasons**, have not been accomplished, and is as follows:
+
+* Connection with a dummy/real backend, from which the app would fetch the data, it is completly WRONG to have the mock data in the initial state of the reducer 😟 . I'd probably use redux-saga for this, since I have used it before and I think is very versatile.
+* Proper styling, that should follow the application's syle guide and, for maintainability reasons, can rely on having the styles separate from the code.
+* Enhancing the SpeachTree, and it's child components' functionality, having a toolbar with necessary tools (expand all, remove selected, refresh, etc.), supporting filtering, grouping, a list view.
+* A proper 'New Node' modal to fill the new node's info as well as asking for confirmation to delete one.
+* Implementing routing, te be able to navigate through the page (probably I'd choose the new reach-router, since it is more elegant and takes a11y into account).
+* Internationalization and localization (i18n and L10n), of the application and it's strings, since it would not have sense to have this application without these requirements, even more in a Localization Project.
+* Testing the components and the logic, through unit and integration tests.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Create React App Info
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
